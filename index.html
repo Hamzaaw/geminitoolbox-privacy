@@ -155,10 +155,10 @@
             <li><strong>Recovery Tokens:</strong> Used to automatically restore your premium status if you reinstall the extension</li>
         </ul>
 
-        <h3>2.2 Automatically Collected Information (Anonymous)</h3>
+        <h3>2.2 Automatically Collected Information (Pseudonymous)</h3>
         <ul>
-            <li><strong>Anonymous User ID:</strong> A randomly generated identifier created on first install (stored locally, not linked to your identity)</li>
-            <li><strong>Analytics Events:</strong> Anonymous feature usage statistics such as:
+            <li><strong>Random Device ID:</strong> A randomly generated identifier created on first install (stored locally, pseudonymous)</li>
+            <li><strong>Analytics Events:</strong> Pseudonymous feature usage statistics such as:
                 <ul>
                     <li>Feature interactions (e.g., "folder_created", "chat_exported", "prompt_used")</li>
                     <li>Upgrade modal views and button clicks (for conversion optimization)</li>
@@ -179,7 +179,7 @@
             <li><strong>Custom Prompts:</strong> Prompts you create in the prompt library</li>
             <li><strong>Pinned Messages:</strong> Messages you pin for quick reference</li>
             <li><strong>Extension Settings:</strong> Your preferences (e.g., word counter enabled/disabled, theme preferences)</li>
-            <li><strong>Important:</strong> All of this data stays on your device and in Chrome's sync storage. We never have access to it unless you explicitly export it.</li>
+            <li><strong>Important:</strong> All of this data stays on your device and in Chrome's sync storage. We (the Gemini Toolbox developer) never receive this data on our servers unless you explicitly export it and send it to us for support or similar purposes.</li>
         </ul>
 
         <h3>2.4 What We DO NOT Collect</h3>
@@ -187,7 +187,7 @@
             <li><strong>Your actual chat conversations with Google Gemini</strong> - We never read, store, or transmit your chat content</li>
             <li><strong>Credit card or payment information</strong> - All payment processing is handled by Lemon Squeezy</li>
             <li><strong>Browsing history</strong> outside of gemini.google.com</li>
-            <li><strong>IP addresses</strong> - Not logged or stored</li>
+            <li><strong>IP addresses</strong> - We do not intentionally log or store IP addresses in our application. Our infrastructure and service providers (hosting, email, payment) may temporarily process IP addresses for security and fraud prevention according to their own privacy policies</li>
             <li><strong>Google account credentials</strong> - We never ask for or access your Google password</li>
             <li><strong>Personal identification</strong> (name, address, phone number) unless you voluntarily include it in feedback</li>
             <li><strong>Location data</strong> - No GPS or geolocation tracking</li>
@@ -215,14 +215,14 @@
         </ul>
 
         <h3>3.3 Analytics Data</h3>
-        <p>Anonymous analytics are used to:</p>
+        <p>We use pseudonymous analytics to:</p>
         <ul>
             <li>Understand which features are most popular and improve UX</li>
             <li>Identify and fix bugs before they affect more users</li>
             <li>Optimize extension performance and reduce resource usage</li>
             <li>Plan future features based on actual usage patterns</li>
             <li>Measure conversion rates for premium features (to improve pricing and messaging)</li>
-            <li><strong>Privacy guarantee:</strong> Analytics are completely anonymous and never linked to your email or identity</li>
+            <li><strong>Privacy guarantee:</strong> Analytics events do not include your chat content, name, or email address, and we do not use them to personally identify you</li>
         </ul>
 
         <h3>3.4 Local Data</h3>
@@ -243,7 +243,7 @@
             <li><strong>Data Shared:</strong> Device identifier (install_id), subscription plan selection. Lemon Squeezy collects payment information directly from you during checkout.</li>
             <li><strong>Why:</strong> We do not want to handle sensitive payment data ourselves for security reasons</li>
             <li><strong>Privacy Policy:</strong> <a href="https://www.lemonsqueezy.com/privacy" target="_blank" rel="noopener">https://www.lemonsqueezy.com/privacy</a></li>
-            <li><strong>Data Processing Agreement:</strong> Lemon Squeezy is GDPR compliant and acts as a payment processor</li>
+            <li><strong>Data Processing Agreement:</strong> Lemon Squeezy states that they comply with GDPR and act as a payment processor</li>
         </ul>
 
         <h3>4.2 Email Delivery Service (Resend or SendGrid)</h3>
@@ -299,7 +299,7 @@
             <li><strong>Database:</strong> PostgreSQL with encryption at rest</li>
             <li><strong>Data Stored:</strong>
                 <ul>
-                    <li>Anonymous analytics events (30 days retention)</li>
+                    <li>Pseudonymous analytics events (30 days retention)</li>
                     <li>Email addresses (only if you linked account)</li>
                     <li>Subscription metadata (status, plan, expiry)</li>
                     <li>Authentication tokens (7-day expiry)</li>
@@ -324,7 +324,7 @@
 
         <h3>5.4 Data Retention Periods</h3>
         <ul>
-            <li><strong>Analytics Events:</strong> 30 days, then automatically deleted</li>
+            <li><strong>Pseudonymous Analytics Events:</strong> 30 days, then automatically deleted</li>
             <li><strong>Email Addresses:</strong> Retained until you request deletion or 90 days after subscription expiry</li>
             <li><strong>Subscription Data:</strong> Retained for 1 year after expiry for billing history, then anonymized</li>
             <li><strong>Session Tokens:</strong> 7 days, then automatically expire</li>
@@ -352,12 +352,12 @@
             <li>We do NOT share analytics with third parties (it's only for internal product improvement)</li>
             <li>We do NOT share your chat content (we never see it in the first place)</li>
             <li>We do NOT share data with Google beyond what Chrome sync requires</li>
-            <li>We do NOT use tracking pixels or third-party analytics services</li>
+            <li>We do NOT use third-party advertising trackers or analytics that profile you across different sites. Our email providers may log basic delivery/open information as part of normal email delivery</li>
         </ul>
 
         <h3>6.3 Analytics and Internal Use Only</h3>
         <ul>
-            <li>All analytics data is anonymous and used only internally</li>
+            <li>All analytics data is pseudonymous and used only internally</li>
             <li>We may publish aggregated statistics (e.g., "50% of users use the folder feature") but never individual user data</li>
             <li>No analytics data is shared with advertising networks or third-party trackers</li>
         </ul>
@@ -435,14 +435,13 @@
         <ul>
             <li><strong>Legal Basis:</strong> We process data based on:
                 <ul>
-                    <li><strong>Contract:</strong> To provide premium services you paid for</li>
-                    <li><strong>Legitimate Interest:</strong> To improve the extension and fix bugs</li>
-                    <li><strong>Consent:</strong> For analytics (implied consent by using extension)</li>
+                    <li><strong>Contract:</strong> To provide premium services and account features (email, subscription data)</li>
+                    <li><strong>Legitimate Interest:</strong> Basic product analytics and error logging for product improvement (without personal identifiers)</li>
                 </ul>
             </li>
-            <li><strong>Data Protection:</strong> All third-party services are GDPR compliant</li>
-            <li><strong>Standard Contractual Clauses:</strong> Data transfers to US comply with EU-US data transfer frameworks</li>
-            <li><strong>Your Rights:</strong> GDPR rights fully apply (see Section 7 and Section 11)</li>
+            <li><strong>Data Protection:</strong> Our third-party service providers state compliance with GDPR requirements</li>
+            <li><strong>Standard Contractual Clauses:</strong> We rely on the protections offered by our providers (such as SCCs or relevant data transfer frameworks), where applicable</li>
+            <li><strong>Your Rights:</strong> GDPR rights apply (see Section 7 and Section 11)</li>
         </ul>
 
         <h3>8.3 California Residents (CCPA)</h3>
@@ -475,7 +474,7 @@
         </ul>
 
         <h2 id="compliance">11. GDPR & CCPA Compliance</h2>
-        <p>This extension fully complies with major privacy regulations:</p>
+        <p>We designed Gemini Toolbox with major privacy regulations such as GDPR and CCPA in mind. This section explains how our practices align with those frameworks:</p>
         
         <h3>11.1 GDPR Compliance (EU Users)</h3>
         <ul>
@@ -504,12 +503,12 @@
             <li><strong>Response Time:</strong> 45 days (extendable to 90 days for complex requests)</li>
         </ul>
 
-        <h3>11.3 Additional Compliance</h3>
+        <h3>11.3 Additional Standards</h3>
         <ul>
-            <li><strong>Chrome Web Store Policies:</strong> Full compliance with all requirements</li>
-            <li><strong>Manifest V3:</strong> Adheres to Chrome Extension security standards</li>
-            <li><strong>PCI DSS:</strong> Payment processing handled by PCI-compliant Lemon Squeezy</li>
-            <li><strong>SOC 2:</strong> Hosting provider (Railway) is SOC 2 compliant</li>
+            <li><strong>Chrome Web Store Policies:</strong> Designed to meet all Chrome Web Store requirements</li>
+            <li><strong>Manifest V3:</strong> Built using Chrome Extension security standards</li>
+            <li><strong>Payment Security:</strong> Payment processing handled by Lemon Squeezy, which advertises PCI compliance</li>
+            <li><strong>Infrastructure:</strong> We use reputable vendors who advertise strong security practices</li>
         </ul>
 
         <div class="contact">
@@ -529,13 +528,11 @@
             <p><strong>Response Time:</strong> We will respond to all inquiries within 30 days (typically much faster)</p>
             
             <div class="warning-box" style="margin-top: 20px;">
-                <strong>Data Protection Officer (EU):</strong> For EU users, data protection inquiries can be sent to the same email address with subject "GDPR Request"
+                <strong>Contact for EU privacy inquiries:</strong> hamzaw31@gmail.com (use subject "GDPR Request")
             </div>
         </div>
 
         <div style="margin-top: 40px; padding: 20px; background: #f8f9fa; border-radius: 5px; text-align: center; color: #5f6368; font-size: 14px;">
-            <p><strong>Last Updated:</strong> November 17, 2025</p>
-            <p><strong>Version:</strong> 1.3.0</p>
             <p style="margin-top: 15px;">This privacy policy is effective immediately and applies to all users of Gemini Toolbox.</p>
             <p style="margin-top: 10px;">© 2025 Hamza W. All rights reserved.</p>
         </div>
